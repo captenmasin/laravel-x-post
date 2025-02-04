@@ -1,0 +1,33 @@
+{
+  "name": "captenmasin/laravel-x-post",
+  "description": "Create X posts using the X API in Laravel.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "x",
+    "twitter",
+    "x-post"
+  ],
+  "homepage": "https://github.com/Captenmasin/laravel-x-post",
+  "autoload": {
+    "psr-4": {
+      "Captenmasin\\LaravelXPost\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.3|^8.4",
+    "illuminate/support": "^11.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Captenmasin\\LaravelXPost\\XPostServiceProvider"
+      ],
+      "aliases": {
+        "XPost": "Captenmasin\\LaravelXPost\\Facades\\XPost"
+      }
+    }
+  }
+}
